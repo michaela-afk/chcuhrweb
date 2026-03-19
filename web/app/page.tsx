@@ -61,12 +61,12 @@ export default function HomePage() {
               A od toho jsme tu my. Pomáháme malým a středním firmám nastavit a rozvíjet HR tak, aby podporovalo růst firmy i spokojenost zaměstnanců.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link
-                href="#kontakt"
+              <a
+                href="mailto:info@suhr.cz"
                 className="bg-[#8664F2] text-white font-semibold px-8 py-4 rounded-xl hover:bg-[#7450e0] transition-colors text-center shadow-lg shadow-[#8664F2]/30"
               >
                 Domluvit konzultaci
-              </Link>
+              </a>
               <Link
                 href="#sluzby"
                 className="border border-white/40 text-white font-semibold px-8 py-4 rounded-xl hover:border-white hover:bg-white/10 transition-colors text-center"
