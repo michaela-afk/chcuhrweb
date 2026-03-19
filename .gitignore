@@ -1,0 +1,39 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Source / archivní soubory (nepatří do repozitáře)
+Fotky/
+Logo/
+*.zip
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Next.js
+web/.next/
+web/out/
+web/.vercel
+
+# Env soubory
+.env
+.env.local
+.env.*.local
+web/.env
+web/.env.local
+web/.env.*.local
+
+# Build výstupy
+web/build/
+web/dist/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
