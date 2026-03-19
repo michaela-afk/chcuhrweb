@@ -51,7 +51,7 @@ export default function HomePage() {
           className="object-cover object-left md:object-center"
           priority
         />
-        <div className="absolute inset-0 bg-[#1F2937]/70 pointer-events-none" />
+        <div className="absolute inset-0 bg-[#1F2937]/70" />
         <div className="relative z-10 w-full py-28 px-6">
           <div className="max-w-6xl mx-auto">
             <h1 className="text-[63px] md:text-[79px] font-bold text-white leading-tight mb-8 mt-[60px] max-w-3xl">

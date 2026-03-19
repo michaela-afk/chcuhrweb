@@ -38,12 +38,12 @@ export default function Navbar() {
               {l.label}
             </Link>
           ))}
-          <Link
-            href="#kontakt"
+          <a
+            href="mailto:info@suhr.cz"
             className="ml-2 bg-[#8664F2] text-white text-base font-semibold px-6 py-3 rounded-xl hover:bg-[#7450e0] hover:shadow-lg hover:shadow-[#8664F2]/25 hover:-translate-y-0.5 transition-all duration-200"
           >
             Domluvit konzultaci
-          </Link>
+          </a>
         </nav>
 
         {/* Mobile hamburger */}
@@ -77,13 +77,13 @@ export default function Navbar() {
               {l.label}
             </Link>
           ))}
-          <Link
-            href="#kontakt"
+          <a
+            href="mailto:info@suhr.cz"
             className="bg-[#8664F2] text-white text-sm font-semibold px-5 py-2.5 rounded-lg text-center hover:bg-[#7450e0] transition-colors"
             onClick={() => setOpen(false)}
           >
             Domluvit konzultaci
-          </Link>
+          </a>
         </div>
       )}
     </header>
