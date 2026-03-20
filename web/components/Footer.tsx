@@ -43,7 +43,7 @@ export default function Footer() {
         </div>
         <div className="border-t border-gray-700 mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gray-500">
           <span>© {new Date().getFullYear()} CHCUHR. Všechna práva vyhrazena.</span>
-          <div className="flex gap-5">
+          <div className="flex flex-wrap gap-5 justify-center sm:justify-end">
             <Link href="/obchodni-podminky" className="hover:text-gray-300 transition-colors">
               Obchodní podmínky
             </Link>

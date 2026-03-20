@@ -62,7 +62,7 @@ export default function JakPracujemePage() {
         <div className="absolute inset-0 bg-[#1F2937]/65" />
         <div className="relative z-10 max-w-6xl mx-auto px-6 py-24 w-full">
           <div className="text-[#D2C8F1] text-sm font-semibold uppercase tracking-widest mb-4">Jak pracujeme</div>
-          <h1 className="text-5xl font-bold text-white mb-6">Náš přístup</h1>
+          <h1 className="text-3xl md:text-5xl font-bold text-white mb-6">Náš přístup</h1>
           <p className="text-xl text-gray-300 leading-relaxed max-w-2xl">
             HR by mělo vždy podporovat byznysové cíle. Věříme v praktická řešení, která skutečně fungují.
           </p>

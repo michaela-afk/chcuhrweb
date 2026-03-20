@@ -18,14 +18,14 @@ export default function ContactSection() {
       />
 
       <div className="relative z-10 max-w-6xl mx-auto">
-          <h2 className="text-[35px] md:text-[41px] font-bold text-[#1F2937] mb-4">
+          <h2 className="text-[26px] md:text-[35px] lg:text-[41px] font-bold text-[#1F2937] mb-4">
             Pojďme společně najít řešení pro vaše HR
           </h2>
           <p className="text-[#6B7280] text-lg leading-relaxed mb-8">
             Ozveme se vám nejpozději do 2 dnů a domluvíme si krátký úvodní call.
           </p>
 
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
+          <div className="flex flex-col sm:flex-row sm:flex-wrap sm:items-center sm:justify-between gap-6">
             {/* Benefits */}
             <ul className="flex flex-col gap-3">
               {benefits.map((b) => (

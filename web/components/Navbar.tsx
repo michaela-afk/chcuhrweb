@@ -16,14 +16,14 @@ export default function Navbar() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-100">
-      <div className="max-w-6xl mx-auto px-6 flex items-center justify-between h-32">
+      <div className="max-w-6xl mx-auto px-6 flex items-center justify-between h-20 md:h-32">
         <Link href="/" className="flex items-center">
           <Image
             src="/Copy of CHCUHR logo-3.png"
             alt="CHCUHR logo"
             width={360}
             height={120}
-            className="h-[160px] w-auto"
+            className="h-[80px] md:h-[160px] w-auto"
           />
         </Link>
 

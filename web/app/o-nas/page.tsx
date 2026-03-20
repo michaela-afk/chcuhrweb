@@ -16,7 +16,7 @@ export default function ONasPage() {
         <div className="absolute inset-0 bg-[#1F2937]/65" />
         <div className="relative z-10 max-w-6xl mx-auto px-6 py-24 w-full">
           <div className="text-[#D2C8F1] text-sm font-semibold uppercase tracking-widest mb-4">O nás</div>
-          <h1 className="text-5xl font-bold text-white mb-6">Kdo jsme</h1>
+          <h1 className="text-3xl md:text-5xl font-bold text-white mb-6">Kdo jsme</h1>
           <p className="text-xl text-gray-300 leading-relaxed max-w-2xl">
             CHCUHR je HR konzultační a implementační služba pro firmy, které chtějí skutečně fungující HR.
           </p>
@@ -74,7 +74,7 @@ export default function ONasPage() {
               ))}
             </div>
           </div>
-          <div className="relative h-[480px] rounded-2xl overflow-hidden shadow-lg">
+          <div className="relative h-[280px] lg:h-[480px] rounded-2xl overflow-hidden shadow-lg">
             <Image
               src="/photos/3V9A1044.jpg"
               alt="Účastník HR akce"

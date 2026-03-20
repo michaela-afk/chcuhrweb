@@ -72,7 +72,7 @@ export default function SluzbyPage() {
         <div className="absolute inset-0 bg-[#1F2937]/70" />
         <div className="relative z-10 max-w-6xl mx-auto px-6 py-24 w-full">
           <div className="text-[#D2C8F1] text-sm font-semibold uppercase tracking-widest mb-4">Služby</div>
-          <h1 className="text-5xl font-bold text-white mb-6">Co děláme</h1>
+          <h1 className="text-3xl md:text-5xl font-bold text-white mb-6">Co děláme</h1>
           <p className="text-xl text-gray-300 leading-relaxed max-w-2xl">
             Nabízíme tři hlavní oblasti HR podpory. Vždy s důrazem na praktické výsledky a byznysový dopad.
           </p>

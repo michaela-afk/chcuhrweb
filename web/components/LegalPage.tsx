@@ -20,7 +20,7 @@ export default function LegalPage({ title, subtitle, sections }: LegalPageProps)
               {subtitle}
             </p>
           )}
-          <h1 className="text-[35px] md:text-[44px] font-bold text-white leading-tight">
+          <h1 className="text-[26px] md:text-[35px] lg:text-[44px] font-bold text-white leading-tight">
             {title}
           </h1>
         </div>
@@ -29,7 +29,7 @@ export default function LegalPage({ title, subtitle, sections }: LegalPageProps)
       {/* Content */}
       <section className="py-16 px-6 bg-[#F8F7FC]">
         <div className="max-w-3xl mx-auto">
-          <div className="bg-white rounded-2xl shadow-sm border border-gray-100 px-8 md:px-12 py-10 flex flex-col gap-10">
+          <div className="bg-white rounded-2xl shadow-sm border border-gray-100 px-5 sm:px-8 md:px-12 py-10 flex flex-col gap-10">
             {sections.map((section) => (
               <div key={section.heading}>
                 <h2 className="text-[18px] font-bold text-[#1F2937] mb-4 pb-3 border-b border-gray-100">

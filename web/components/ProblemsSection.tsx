@@ -44,7 +44,7 @@ export default function ProblemsSection() {
 
       <div className="relative z-10 max-w-6xl mx-auto">
         <div className="mb-14">
-          <h2 className="text-[35px] md:text-[41px] font-bold text-[#1F2937] mb-4">
+          <h2 className="text-[26px] md:text-[35px] lg:text-[41px] font-bold text-[#1F2937] mb-4">
             Situace, se kterými umíme pomoci
           </h2>
           <p className="text-[#6B7280] text-lg leading-relaxed">

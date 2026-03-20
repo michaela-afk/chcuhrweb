@@ -52,9 +52,9 @@ export default function HomePage() {
           priority
         />
         <div className="absolute inset-0 bg-[#1F2937]/70" />
-        <div className="relative z-10 w-full py-28 px-6">
+        <div className="relative z-10 w-full py-16 md:py-28 px-6">
           <div className="max-w-6xl mx-auto">
-            <h1 className="text-[63px] md:text-[79px] font-bold text-white leading-tight mb-8 mt-[60px] max-w-3xl">
+            <h1 className="text-[36px] md:text-[63px] lg:text-[79px] font-bold text-white leading-tight mb-8 mt-6 md:mt-[60px] max-w-3xl">
               Skvělé firmy začínají u <FallWobbleText>spokojených lidí.</FallWobbleText>
             </h1>
             <p className="text-xl text-white/90 leading-relaxed mb-10 max-w-2xl font-medium">
@@ -81,9 +81,9 @@ export default function HomePage() {
       <ProblemsSection />
 
       {/* O nás – SUHR */}
-      <section id="o-nas" className="relative py-24 px-6 bg-[#1F2937] scroll-mt-32">
+      <section id="o-nas" className="relative py-24 px-6 bg-[#1F2937] scroll-mt-32 overflow-hidden">
         <div className="relative z-20 max-w-6xl mx-auto">
-          <h2 className="text-[35px] md:text-[41px] font-bold text-white mb-4">
+          <h2 className="text-[26px] md:text-[35px] lg:text-[41px] font-bold text-white mb-4">
             CHCUHR je součástí ekosystému SUHR
           </h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
@@ -114,6 +114,7 @@ export default function HomePage() {
         <img
           src="/photos/founder.png"
           alt="Michaela Tumpachová – zakladatelka CHCUHR"
+          className="hidden lg:block"
           style={{
             position: "absolute",
             bottom: "64px",
@@ -141,7 +142,7 @@ export default function HomePage() {
 
         <div className="relative z-10 max-w-6xl mx-auto">
           <div className="mb-14">
-            <h2 className="text-[35px] md:text-[41px] font-bold text-[#1F2937] mb-4">Naše služby</h2>
+            <h2 className="text-[26px] md:text-[35px] lg:text-[41px] font-bold text-[#1F2937] mb-4">Naše služby</h2>
             <p className="text-[#6B7280] text-lg leading-relaxed">
               Každá firma má jiné potřeby – od nastavení základních HR procesů až po strategické řízení lidí. Naše služby pokrývají klíčové oblasti, které vám pomohou stabilizovat tým, podpořit růst firmy a nastavit HR tak, aby dlouhodobě fungovalo.
             </p>
@@ -178,7 +179,7 @@ export default function HomePage() {
       </section>
 
       {/* Jak pracujeme */}
-      <section id="jak-pracujeme" className="relative py-24 px-6 scroll-mt-32">
+      <section id="jak-pracujeme" className="relative py-24 px-6 scroll-mt-32 overflow-hidden">
         <Image
           src="/photos/3V9A0732.jpg"
           alt="Spolupráce s klientem – CHCUHR"
@@ -190,7 +191,7 @@ export default function HomePage() {
         <div className="relative z-10 max-w-6xl mx-auto">
           {/* Heading + subtitle */}
           <div className="mb-14">
-            <h2 className="text-[35px] md:text-[41px] font-bold text-white mb-4">Jak pracujeme</h2>
+            <h2 className="text-[26px] md:text-[35px] lg:text-[41px] font-bold text-white mb-4">Jak pracujeme</h2>
             <p className="text-white/80 text-lg leading-relaxed">
               Každá firma je jiná, ale princip naší spolupráce zůstává stejný. Nejprve pochopíme vaši situaci, navrhneme řešení a společně ho uvedeme do praxe tak, aby dlouhodobě fungovalo.
             </p>
