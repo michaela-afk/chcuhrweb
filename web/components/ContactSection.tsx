@@ -39,14 +39,16 @@ export default function ContactSection() {
             ))}
           </ul>
 
-          <a
-            href="mailto:info@suhr.cz"
-            className="bg-[#8664F2] text-white font-semibold px-8 py-4 rounded-xl
-              hover:bg-[#7450e0] hover:shadow-lg hover:shadow-[#8664F2]/25 hover:-translate-y-0.5
-              active:translate-y-0 transition-all duration-200"
-          >
-            Napsat na info@suhr.cz
-          </a>
+          <div className="flex justify-end">
+            <a
+              href="mailto:info@suhr.cz"
+              className="bg-[#8664F2] text-white font-semibold px-8 py-4 rounded-xl
+                hover:bg-[#7450e0] hover:shadow-lg hover:shadow-[#8664F2]/25 hover:-translate-y-0.5
+                active:translate-y-0 transition-all duration-200"
+            >
+              Napsat na info@suhr.cz
+            </a>
+          </div>
       </div>
     </section>
   );
