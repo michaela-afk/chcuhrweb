@@ -40,14 +40,25 @@ export default function ContactSection() {
               ))}
             </ul>
 
-            <a
-              href="mailto:info@suhr.cz"
-              className="bg-[#8664F2] text-white font-semibold px-8 py-4 rounded-xl shrink-0
-                hover:bg-[#7450e0] hover:shadow-lg hover:shadow-[#8664F2]/25 hover:-translate-y-0.5
-                active:translate-y-0 transition-all duration-200"
-            >
-              Napsat na info@suhr.cz
-            </a>
+            {/* Contact info */}
+            <div className="flex flex-col gap-4 shrink-0">
+              <a href="mailto:info@suhr.cz" className="flex items-center gap-3 group">
+                <div className="w-9 h-9 rounded-lg bg-[#F0EDF9] flex items-center justify-center shrink-0 group-hover:bg-[#8664F2] transition-colors">
+                  <svg className="w-4 h-4 text-[#8664F2] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <span className="text-[#1F2937] font-medium group-hover:text-[#8664F2] transition-colors">info@suhr.cz</span>
+              </a>
+              <a href="tel:+420732658407" className="flex items-center gap-3 group">
+                <div className="w-9 h-9 rounded-lg bg-[#F0EDF9] flex items-center justify-center shrink-0 group-hover:bg-[#8664F2] transition-colors">
+                  <svg className="w-4 h-4 text-[#8664F2] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  </svg>
+                </div>
+                <span className="text-[#1F2937] font-medium group-hover:text-[#8664F2] transition-colors">+420 732 658 407</span>
+              </a>
+            </div>
           </div>
       </div>
     </section>
