@@ -25,7 +25,7 @@ export default function ContactSection() {
             Ozveme se vám nejpozději do 2 dnů a domluvíme si krátký úvodní call.
           </p>
 
-          <div className="flex flex-col sm:flex-row sm:items-center gap-[800px]">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
             {/* Benefits */}
             <ul className="flex flex-col gap-3">
               {benefits.map((b) => (
