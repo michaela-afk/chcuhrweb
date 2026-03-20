@@ -25,24 +25,24 @@ export default function ContactSection() {
             Ozveme se vám nejpozději do 2 dnů a domluvíme si krátký úvodní call.
           </p>
 
-          {/* Benefits */}
-          <ul className="flex flex-col gap-3 mb-10">
-            {benefits.map((b) => (
-              <li key={b} className="flex items-center gap-3">
-                <span className="w-5 h-5 rounded-full bg-[#F0EDF9] flex items-center justify-center shrink-0">
-                  <svg className="w-3 h-3 text-[#8664F2]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
-                  </svg>
-                </span>
-                <span className="text-[#1F2937] text-sm font-medium">{b}</span>
-              </li>
-            ))}
-          </ul>
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-8">
+            {/* Benefits */}
+            <ul className="flex flex-col gap-3">
+              {benefits.map((b) => (
+                <li key={b} className="flex items-center gap-3">
+                  <span className="w-5 h-5 rounded-full bg-[#F0EDF9] flex items-center justify-center shrink-0">
+                    <svg className="w-3 h-3 text-[#8664F2]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </span>
+                  <span className="text-[#1F2937] text-sm font-medium">{b}</span>
+                </li>
+              ))}
+            </ul>
 
-          <div className="flex justify-end">
             <a
               href="mailto:info@suhr.cz"
-              className="bg-[#8664F2] text-white font-semibold px-8 py-4 rounded-xl
+              className="bg-[#8664F2] text-white font-semibold px-8 py-4 rounded-xl shrink-0
                 hover:bg-[#7450e0] hover:shadow-lg hover:shadow-[#8664F2]/25 hover:-translate-y-0.5
                 active:translate-y-0 transition-all duration-200"
             >
