@@ -17,9 +17,7 @@ export default function ContactSection() {
         style={{ background: "radial-gradient(circle, rgba(184,159,245,0.08) 0%, transparent 70%)" }}
       />
 
-      <div className="relative z-10 max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-        {/* Left */}
-        <div>
+      <div className="relative z-10 max-w-6xl mx-auto">
           <h2 className="text-[35px] md:text-[41px] font-bold text-[#1F2937] mb-4">
             Pojďme společně najít řešení pro vaše HR
           </h2>
@@ -28,7 +26,7 @@ export default function ContactSection() {
           </p>
 
           {/* Benefits */}
-          <ul className="flex flex-col gap-3">
+          <ul className="flex flex-col gap-3 mb-10">
             {benefits.map((b) => (
               <li key={b} className="flex items-center gap-3">
                 <span className="w-5 h-5 rounded-full bg-[#F0EDF9] flex items-center justify-center shrink-0">
@@ -40,10 +38,7 @@ export default function ContactSection() {
               </li>
             ))}
           </ul>
-        </div>
 
-        {/* Right */}
-        <div className="flex justify-end">
           <a
             href="mailto:info@suhr.cz"
             className="bg-[#8664F2] text-white font-semibold px-8 py-4 rounded-xl
@@ -52,7 +47,6 @@ export default function ContactSection() {
           >
             Napsat na info@suhr.cz
           </a>
-        </div>
       </div>
     </section>
   );
