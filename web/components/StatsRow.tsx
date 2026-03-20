@@ -50,19 +50,19 @@ function StatItem({ target, suffix, label, active, delay, isLast, isStatic }: {
   const value = useCounter(target, isStatic ? false : active, 1500, delay);
 
   return (
-    <div className="contents">
+    <>
       <div
         style={{ transitionDelay: `${delay}ms` }}
         className={`text-center flex-1 min-w-0 transition-all duration-700 ease-out
           ${active ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-8"}`}
       >
-        <div className="text-[36px] sm:text-[50px] font-bold text-white leading-none mb-1">
+        <div className="text-[32px] sm:text-[50px] font-bold text-white leading-none mb-1">
           {isStatic ? `${target}${suffix}` : `${formatNumber(value, target)}${suffix}`}
         </div>
         <div className="text-white/70 text-sm">{label}</div>
       </div>
-      {!isLast && <div className="w-px h-12 bg-white/20 mx-4 shrink-0" />}
-    </div>
+      {!isLast && <div className="hidden sm:block w-px h-12 bg-white/20 mx-4 shrink-0" />}
+    </>
   );
 }
 
@@ -85,7 +85,7 @@ export default function StatsRow() {
   }, []);
 
   return (
-    <div ref={ref} className="max-w-6xl mx-auto bg-[#8664F2] rounded-2xl px-6 py-10 flex flex-wrap sm:flex-nowrap items-center justify-between gap-y-8 shadow-xl shadow-[#8664F2]/20">
+    <div ref={ref} className="max-w-6xl mx-auto bg-[#8664F2] rounded-2xl px-6 py-10 flex flex-col sm:flex-row items-center justify-between gap-6 sm:gap-0 shadow-xl shadow-[#8664F2]/20">
       {stats.map((stat, i) => (
         <StatItem
           key={stat.label}
