@@ -9,7 +9,7 @@ export default function Footer() {
           <div>
             <div className="mb-3">
               <Image
-                src="/Untitled design-8.png"
+                src="/Untitled design-8.webp"
                 alt="CHCUHR logo"
                 width={280}
                 height={69}

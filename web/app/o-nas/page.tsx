@@ -1,5 +1,19 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "O nás",
+  description: "CHCUHR je HR konzultační a implementační služba pro firmy, které chtějí skutečně fungující HR. Součást ekosystému SUHR.",
+  openGraph: {
+    url: "https://www.chcuhr.cz/o-nas",
+    title: "O nás | CHCUHR",
+    description: "CHCUHR je HR konzultační a implementační služba pro firmy, které chtějí skutečně fungující HR. Součást ekosystému SUHR.",
+  },
+  alternates: {
+    canonical: "https://www.chcuhr.cz/o-nas",
+  },
+};
 
 export default function ONasPage() {
   return (
@@ -7,7 +21,7 @@ export default function ONasPage() {
       {/* Header */}
       <section className="relative flex items-center min-h-[480px] pt-16">
         <Image
-          src="/photos/3V9A0018.jpg"
+          src="/photos/3V9A0018.webp"
           alt="HR konzultace – přednáška"
           fill
           className="object-cover object-top"
@@ -76,7 +90,7 @@ export default function ONasPage() {
           </div>
           <div className="relative h-[280px] lg:h-[480px] rounded-2xl overflow-hidden shadow-lg">
             <Image
-              src="/photos/3V9A1044.jpg"
+              src="/photos/3V9A1044.webp"
               alt="Účastník HR akce"
               fill
               className="object-cover object-center"

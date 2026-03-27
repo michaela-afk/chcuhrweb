@@ -1,4 +1,18 @@
+import type { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Kontakt",
+  description: "Domluvte si nezávaznou konzultaci s CHCUHR. Napište nám na info@chcuhr.cz a ozveme se do 48 hodin.",
+  openGraph: {
+    url: "https://www.chcuhr.cz/kontakt",
+    title: "Kontakt | CHCUHR",
+    description: "Domluvte si nezávaznou konzultaci s CHCUHR. Napište nám na info@chcuhr.cz a ozveme se do 48 hodin.",
+  },
+  alternates: {
+    canonical: "https://www.chcuhr.cz/kontakt",
+  },
+};
 
 export default function KontaktPage() {
   return (
@@ -6,7 +20,7 @@ export default function KontaktPage() {
       {/* Header */}
       <section className="relative flex items-center min-h-[480px] pt-16">
         <Image
-          src="/photos/3V9A0074.jpg"
+          src="/photos/3V9A0074.webp"
           alt="HR konzultanti na stage"
           fill
           className="object-cover object-center"

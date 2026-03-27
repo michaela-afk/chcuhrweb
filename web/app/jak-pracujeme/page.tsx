@@ -1,5 +1,19 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Jak pracujeme",
+  description: "Náš přístup ke spolupráci: úvodní konzultace, analýza, implementace a předání. HR, které skutečně podporuje byznysové cíle.",
+  openGraph: {
+    url: "https://www.chcuhr.cz/jak-pracujeme",
+    title: "Jak pracujeme | CHCUHR",
+    description: "Náš přístup ke spolupráci: úvodní konzultace, analýza, implementace a předání. HR, které skutečně podporuje byznysové cíle.",
+  },
+  alternates: {
+    canonical: "https://www.chcuhr.cz/jak-pracujeme",
+  },
+};
 
 const steps = [
   {
@@ -53,7 +67,7 @@ export default function JakPracujemePage() {
       {/* Header */}
       <section className="relative flex items-center min-h-[480px] pt-16">
         <Image
-          src="/photos/3V9A1452.jpg"
+          src="/photos/3V9A1452.webp"
           alt="HR konzultace – prezentace"
           fill
           className="object-cover object-top"
@@ -120,7 +134,7 @@ export default function JakPracujemePage() {
           </div>
           <div className="relative h-[380px] rounded-2xl overflow-hidden shadow-lg">
             <Image
-              src="/photos/3V9A0074.jpg"
+              src="/photos/3V9A0074.webp"
               alt="Dva HR konzultanti na stage"
               fill
               className="object-cover object-center"

@@ -45,7 +45,7 @@ export default function HomePage() {
       {/* Hero */}
       <section className="relative flex items-center min-h-[380px] md:min-h-[620px] pt-16 bg-[#1F2937]">
         <Image
-          src="/photos/3V9A1749.jpg"
+          src="/photos/3V9A1749.webp"
           alt="Tým CHCUHR"
           fill
           className="object-cover object-left md:object-center"
@@ -109,10 +109,10 @@ export default function HomePage() {
             <div className="hidden lg:block" />
           </div>
         </div>
-        {/* Founder photo – starts at stats bar level */}
+        {/* Founder photo */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/photos/founder.png"
+          src="/photos/founder.webp"
           alt="Michaela Tumpachová – zakladatelka CHCUHR"
           className="hidden lg:block"
           style={{
@@ -134,7 +134,6 @@ export default function HomePage() {
 
       {/* Services */}
       <section id="sluzby" className="relative pt-32 pb-24 px-6 bg-[#F8F7FC] scroll-mt-32 overflow-hidden">
-        {/* Decorative corner accents */}
         <svg className="absolute -right-2 -top-2 w-48 h-48 pointer-events-none" viewBox="0 0 200 200" fill="none">
           <path d="M 200,160 L 200,20 Q 200,0 180,0 L 40,0" stroke="#8664F2" strokeWidth="18" strokeLinecap="round"/>
           <path d="M 200,120 L 200,20 Q 200,0 180,0 L 80,0" stroke="#8664F2" strokeWidth="6" strokeLinecap="round" strokeOpacity="0.4"/>
@@ -159,13 +158,9 @@ export default function HomePage() {
                   hover:border-[#E5DEFA]
                   transition-all duration-300 ease-out"
               >
-                {/* Top accent bar */}
                 <div className="w-8 h-[3px] bg-[#8664F2] rounded-full mb-6 group-hover:w-14 transition-all duration-300" />
-
                 <h3 className="text-[17px] font-bold text-[#1F2937] mb-3 leading-snug">{s.title}</h3>
                 <p className="text-[#6B7280] text-sm leading-relaxed flex-1">{s.description}</p>
-
-                {/* Příklad výstupu */}
                 <div className="mt-5 pt-5 border-t border-gray-100">
                   <span className="inline-block text-[10px] font-bold uppercase tracking-widest text-[#8664F2] mb-2">
                     Příklad výstupu
@@ -181,7 +176,7 @@ export default function HomePage() {
       {/* Jak pracujeme */}
       <section id="jak-pracujeme" className="relative py-24 px-6 scroll-mt-32 overflow-hidden">
         <Image
-          src="/photos/3V9A0732.jpg"
+          src="/photos/3V9A0732.webp"
           alt="Spolupráce s klientem – CHCUHR"
           fill
           className="object-cover object-center"
@@ -189,19 +184,15 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-[#1F2937]/75" />
 
         <div className="relative z-10 max-w-6xl mx-auto">
-          {/* Heading + subtitle */}
           <div className="mb-14">
             <h2 className="text-[26px] md:text-[35px] lg:text-[41px] font-bold text-white mb-4">Jak pracujeme</h2>
             <p className="text-white/80 text-lg leading-relaxed">
               Každá firma je jiná, ale princip naší spolupráce zůstává stejný. Nejprve pochopíme vaši situaci, navrhneme řešení a společně ho uvedeme do praxe tak, aby dlouhodobě fungovalo.
             </p>
           </div>
-
-          {/* Steps grid */}
           <HowWeWorkSteps />
         </div>
       </section>
-
 
       <ContactSection />
     </main>

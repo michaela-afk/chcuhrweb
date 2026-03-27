@@ -19,7 +19,7 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between h-20 md:h-32">
         <Link href="/" className="flex items-center">
           <Image
-            src="/Copy of CHCUHR logo-3.png"
+            src="/Copy of CHCUHR logo-3.webp"
             alt="CHCUHR logo"
             width={360}
             height={120}

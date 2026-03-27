@@ -1,5 +1,19 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Služby",
+  description: "Interim HR, HR projekty a HR outsourcing pro malé a střední firmy. Praktické HR řešení bez zbytečné byrokracie.",
+  openGraph: {
+    url: "https://www.chcuhr.cz/sluzby",
+    title: "Služby | CHCUHR",
+    description: "Interim HR, HR projekty a HR outsourcing pro malé a střední firmy. Praktické HR řešení bez zbytečné byrokracie.",
+  },
+  alternates: {
+    canonical: "https://www.chcuhr.cz/sluzby",
+  },
+};
 
 const services = [
   {
@@ -16,7 +30,7 @@ const services = [
       "Podpora v období růstu nebo transformace",
     ],
     forWhom: "Startupům a scale-upům, které teprve budují HR tým. Firmám procházejícím změnou nebo rychlým růstem.",
-    image: "/photos/3V9A0850.jpg",
+    image: "/photos/3V9A0850.webp",
     imageAlt: "HR konzultantka na workshopu",
   },
   {
@@ -35,7 +49,7 @@ const services = [
       "HR dokumentace a politiky",
     ],
     forWhom: "Firmám, které chtějí zlepšit konkrétní oblast HR. Společnostem přecházejícím z neformálního HR na strukturované.",
-    image: "/photos/3V9A0691.jpg",
+    image: "/photos/3V9A0691.webp",
     imageAlt: "HR konzultant prezentuje projekt",
   },
   {
@@ -52,7 +66,7 @@ const services = [
       "Zlepšování HR procesů",
     ],
     forWhom: "Malým a středním firmám bez HR oddělení. Firmám, které chtějí profesionální HR bez interního HR manažera.",
-    image: "/photos/3V9A0089.jpg",
+    image: "/photos/3V9A0089.webp",
     imageAlt: "Psaní poznámek na HR akci",
   },
 ];
@@ -63,7 +77,7 @@ export default function SluzbyPage() {
       {/* Header */}
       <section className="relative flex items-center min-h-[480px] pt-16">
         <Image
-          src="/photos/3V9A0326.jpg"
+          src="/photos/3V9A0326.webp"
           alt="HR konference – publikum"
           fill
           className="object-cover object-center"
